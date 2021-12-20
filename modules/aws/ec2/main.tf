@@ -24,8 +24,6 @@ resource "aws_instance" "this_instance" {
   associate_public_ip_address = var.associate_public_ip_address
   vpc_security_group_ids      = [module.this_sg.security_group_id]
 
-  key_name                    = data.terraform_remote_state.key_pair.outputs.key_name
-
   tags = {
     Name = "${var.instance_name}${count.index + 1}"
     Environment = var.environment
