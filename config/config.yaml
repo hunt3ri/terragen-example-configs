@@ -23,7 +23,7 @@ environment:
 # Build section controls how the modules we defined are built
 build:
   cloud_provider: "AWSProvider"  # Provider used to create all infra
-  environment: "prod"            # Deployment environment must be one of dev|test|ppe|prod
+  environment: "dev"            # Deployment environment must be one of dev|test|ppe|prod
   infra_shared: "create"         # Process shared infra, Must be one of create|destroy|pass
   infra_app: "create"            # Process application infra, must be one of create|destroy|pass
   terraform_mode: "apply"         # Must be one of plan|apply - Plan produces terraform plan only, apply will create or destroy infra
