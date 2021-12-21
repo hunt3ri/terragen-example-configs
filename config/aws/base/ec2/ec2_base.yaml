@@ -16,9 +16,7 @@ config:
   instance_count              : 1
   instance_name               : ???
   associate_public_ip_address : False
-  aws_account                 : ${build.aws_accounts[${build.environment}]}
 
 
 lookups:
-  key_pair_statefile  : ???
   vpc_statefile       : ???

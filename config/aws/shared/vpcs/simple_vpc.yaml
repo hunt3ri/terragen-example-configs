@@ -6,5 +6,5 @@ module_metadata:
   state_file  : "shared/vpc/simple_vpc/terraform.tfstate"
 
 config:
-  vpc_name:             "hunter-labs-vpc"
+  vpc_name:             "terragen-vpc"
   enable_dns_hostnames: true

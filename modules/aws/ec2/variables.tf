@@ -40,10 +40,6 @@ variable "associate_public_ip_address" {
   default = false
 }
 
-variable "aws_account" {
-  description = "The ID of the AWS account we're operating in"
-}
-
 variable "environment" {
   description = "The environment we're in, eg dev, prd"
   default = "DEV"
