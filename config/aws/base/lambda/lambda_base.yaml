@@ -1,0 +1,25 @@
+module_metadata:
+  aws_service : "lambda"
+  module_dir  : "modules/aws/lambda"
+  name        : ???
+  state_file  : ???
+
+config:
+  function_name        : ???
+  function_description : ???
+  handler              : ???
+  runtime              : "python3.9"
+  timeout              : 5
+  source_path          : ???
+
+  # Role
+  create_role          : False
+  lambda_role          : "arn:aws:iam::222866594907:role/HunterLabsLambda"
+
+  # Uncomment to add layers
+  #layers               : ???
+
+  # Env vars will create a map of environment vars
+  env_vars:
+
+lookups:

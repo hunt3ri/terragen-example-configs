@@ -1,0 +1,18 @@
+# Creates a simple API-Gateway resource for calling the COVID Geocoding Lambda function
+defaults:
+  - /aws/base/api_gateway_rest@: api_gateway_rest
+
+module_metadata:
+  name        : "hello_world_api"
+  state_file  : "apps/hello_world_api/terraform.tfstate"
+
+config:
+  api_name               : "hello_world_api"
+  api_description        : "Hello World REST API"
+  api_resource           : "world"
+  api_http_method        : "POST"
+  api_authorization      : "NONE"
+
+
+lookups:
+  lambda_statefile  : ${app.lambda.scot_covid_geocoder.module_metadata.state_file}
