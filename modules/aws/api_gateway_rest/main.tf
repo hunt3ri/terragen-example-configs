@@ -43,7 +43,6 @@ resource "aws_lambda_permission" "apigw_lambda" {
   # Gives API-Gateway permission to access the Lambda function.
   statement_id  = "AllowExecutionFromAPIGateway"
   action        = "lambda:InvokeFunction"
-  #function_name = "scot_covid_geocoder"
   function_name = data.terraform_remote_state.lambda.outputs.lambda_function_name
   principal     = "apigateway.amazonaws.com"
 
