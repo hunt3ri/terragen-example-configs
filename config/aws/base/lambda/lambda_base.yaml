@@ -13,8 +13,7 @@ config:
   source_path          : ???
 
   # Role
-  create_role          : False
-  lambda_role          : "arn:aws:iam::222866594907:role/HunterLabsLambda"
+  create_role          : True
 
   # Uncomment to add layers
   #layers               : ???

@@ -14,7 +14,7 @@ module "lambda_function" {
 
   # Attach existing role to allow access to S3
   create_role = var.create_role
-  lambda_role = var.lambda_role
+  #lambda_role = var.lambda_role
 
   layers = var.layers
 
