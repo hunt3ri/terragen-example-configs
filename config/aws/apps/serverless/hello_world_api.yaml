@@ -15,4 +15,4 @@ config:
 
 
 lookups:
-  lambda_statefile  : ${app.lambda.scot_covid_geocoder.module_metadata.state_file}
+  lambda_statefile  : ${app.lambda.hello_world_lambda.module_metadata.state_file}
