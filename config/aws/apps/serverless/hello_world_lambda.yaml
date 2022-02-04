@@ -12,6 +12,6 @@ config:
   function_description   : "Terragen Hello World Serverless"
   handler                : "hello_world.lambda_handler"
   timeout                : 10
-  source_path            : "/tools/terraform/utils/terragen-hunter-labs/apps/hello_world/hello_world.py"
+  source_path            : "/tools/terraform/utils/terragen-example-configs/apps/hello_world/hello_world.py"
   env_vars:
     HELLO: "world"
