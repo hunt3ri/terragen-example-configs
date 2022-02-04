@@ -16,7 +16,7 @@ module "lambda_function" {
   create_role = var.create_role
   #lambda_role = var.lambda_role
 
-  layers = var.layers
+  #layers = var.layers
 
   tags = {
     Name = var.function_name
