@@ -1,4 +1,4 @@
-# Lambda function that GeoCodes Scottish Government COVID data
+# Terragen hello world lambda example
 defaults:
   - /aws/base/lambda@: lambda_base
 
@@ -12,6 +12,7 @@ config:
   function_description   : "Terragen Hello World Serverless"
   handler                : "hello_world.lambda_handler"
   timeout                : 10
+                           # IMPORTANT - You will need to alter this path to suit your install
   source_path            : "/tools/terraform/utils/terragen-example-configs/apps/hello_world/hello_world.py"
   env_vars:
     HELLO: "world"
