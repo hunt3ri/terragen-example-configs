@@ -11,8 +11,20 @@ Terragen is a framework for generating and automatically applying Terraform modu
 Update your AWS information in `./config/apps` before running commands below
 
 ### Create Infra
+
+#### EC2 Sandbox Example
+```commandline
+terragen -cd ./config build.debug=False -cn sandbox
+```
+
 #### Serverless Example
 ```commandline
 terragen -cd ./config build.debug=False build.infra_shared=pass -cn serverless
+```
+
+### Destroy Infra
+```commandline
+terragen -cd ./config build.debug=False build.infra_shared=destroy build.infra_app=destroy -cn sandbox
+terragen -cd ./config build.debug=False build.infra_shared=pass build.infra_app=destroy -cn serverless
 ```
 
