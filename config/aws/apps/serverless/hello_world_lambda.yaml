@@ -1,0 +1,18 @@
+# Terragen hello world lambda example
+defaults:
+  - /aws/base/lambda@: lambda_base
+
+module_metadata:
+  name        : "terragen_hello"
+  state_file  : "apps/terragen_hello/terraform.tfstate"
+
+
+config:
+  function_name          : "terragen_hello"
+  function_description   : "Terragen Hello World Serverless"
+  handler                : "hello_world.lambda_handler"
+  timeout                : 10
+                           # IMPORTANT - You will need to alter this path to suit your install
+  source_path            : "/tools/terraform/utils/terragen-example-configs/apps/hello_world/hello_world.py"
+  env_vars:
+    HELLO: "world"

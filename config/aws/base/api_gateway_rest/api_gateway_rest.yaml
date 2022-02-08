@@ -1,0 +1,22 @@
+module_metadata:
+  aws_service : "lambda"
+  module_dir  : "modules/aws/api_gateway_rest"
+  name        : ???
+  state_file  : ???
+
+config:
+  api_name          : ???
+  api_description   : ???
+  api_resource      : ???
+  api_http_method   : ???
+  api_authorization : ???
+
+  lambda_integration_type : "AWS"  # Valid values are AWS or AWS_PROXY for lambda integrations
+  invocation_type_header : "'RequestResponse'"  # Set to 'Event' for Async requests
+
+  region          : ${environment[${build.environment}].region}
+  aws_account     : ${environment[${build.environment}].aws_account}
+
+
+lookups:
+  lambda_statefile  : ???
