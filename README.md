@@ -19,7 +19,7 @@ terragen -cd ./config build.debug=False environment.dev.profile=hunter_ops_prod 
 
 #### Serverless Example
 ```commandline
-terragen -cd ./config build.debug=False build.infra_shared=pass bui-cn serverless
+terragen -cd ./config build.debug=False build.infra_shared=pass -cn serverless
 ```
 
 ### Destroy Infra
